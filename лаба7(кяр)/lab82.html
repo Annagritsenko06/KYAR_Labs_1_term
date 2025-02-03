@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav li{
+            display: inline;
+            margin-right: -6px;
+        } 
+        .class a{
+            display: inline-block;
+            background-color: yellow;
+            color: green;
+            text-decoration:none;
+            padding: 20px;
+            border: 2px solid green;
+        } 
+
+
+        .forest:hover{
+          transform: scale(0.5);
+          transition: 2s;
+        }
+.sea:hover{
+          transform: rotate(45deg) ;
+          transition: 2s;
+     }
+.moun1:hover{
+         transform: translate(50px,0px);
+         transition: 2s;
+     }
+.moun2:hover{
+         transform: skew(20deg);
+         transition: 2s;
+     }
+     h1{
+          text-align: center;
+     }
+
+
+     .f1{
+    transform: perspective(500px) rotateX(30deg);
+}
+.f2{
+    transform: perspective(500px) rotateY(30deg);
+}
+.f3{
+    transform: perspective(500px) rotateX(30deg);
+}
+.f4{
+    transform: perspective(500px) rotateY(320deg);
+}
+img{  
+     display: inline-block;
+      width: 300px;
+      height: 300px;
+      margin: 20px 20px 20px 20px;
+ }
+   
+
+ button{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+}
+.happy:hover{
+    background-color: black;
+    color:white;
+    border:none;
+}
+.angry:hover{
+    border:3px solid  red;
+    outline: 3px solid yellow;
+    background-color: white;
+}
+.shy:hover{
+    border-top:3px solid ;
+    border-bottom:3px solid ;
+    border-left: none;
+    border-right: none;
+    border-top-color: green ;
+    border-bottom-color: green ;
+    background-color: white;
+}
+.smily:hover{
+    border-left:3px solid ;
+    border-right:3px solid ;
+    border-top: none;
+    border-bottom: none;
+    border-left-color: blue;
+    border-right-color: blue;
+    background-color: white;
+}
+.gloomy:hover{
+    background-image: radial-gradient(yellow, deeppink, blueviolet, cyan);
+    border:none;}
+
+
+    @keyframes sun{
+    0% {transform: perspective(500px) rotateY(30deg);}
+    50% { transform: translate3d(300px,0,0) rotateY(0deg);}
+    75% { transform: translate3d(-100px,100px,0);}
+    100% {transform: translate3d(100px,100px,0);}
+    }
+    @keyframes sun1{
+        0% {transform: perspective(500px) rotateY(30deg);filter: none; margin-left: -180px;}
+        50% { transform: translate3d(300px,0,0) rotateY(0deg);filter: none; margin-left: -180px;}
+        75% { transform: translate3d(-100px,100px,0);filter: none;}
+        100% {transform: translate3d(100px,100px,0);
+         filter: blur(10px); margin-left: 0;}
+        }
+        @keyframes sun2{
+            0% {transform: perspective(500px) rotateY(30deg) translate(40px);filter: none; margin-left: -180px;}
+            50% { transform: translate3d(300px,0,0) rotateY(0deg);filter: none; margin-left: -180px;}
+            75% { transform: translate3d(-100px,100px,0);filter: none;}
+            100% {transform: translate3d(100px,100px,0);
+                 filter:grayscale(1); margin-left: 0;}
+            }
+            @keyframes sun3{
+                0% {transform: perspective(500px) rotateY(30deg) translate(60px);filter: none; margin-left: -170px;}
+                50% { transform: translate3d(300px,0,0) rotateY(0deg);filter: none; margin-left: -170px;}
+                75% { transform: translate3d(-100px,100px,0);filter: none;}
+                100% {transform: translate3d(100px,100px,0);
+                      filter:invert(1); margin-left: 0;}
+                }
+.ru1{
+position:relative;
+animation: sun 5s linear infinite;
+}
+.ru2{
+    position:relative;
+    animation: sun1 5s linear infinite;
+    
+    }
+ .ru3{
+        position:relative;
+        animation: sun2 5s linear infinite;
+        
+        }
+.ru4{
+            position:relative;
+            animation: sun3 5s linear infinite;
+            }
+
+
+            img .one{
+        width: 300px;
+        height: 250px;
+        border: blue 5px solid;
+    }
+
+    .fy1{
+        position: absolute;
+        opacity: 0;
+        animation: forest linear 5s infinite;
+    }
+        @keyframes forest{
+            0%{ opacity: 1;}
+            25% {opacity: 0; }
+            50% { opacity: 0; }
+            75% { opacity: 0;}
+            100% {opacity: 0;}
+        }
+    .fy2{
+        position: absolute;
+        opacity: 0;
+        animation: sea linear 5s infinite;
+    }
+        @keyframes sea{
+            0%{ opacity: 0;}
+            25% {opacity: 1; }
+            50% { opacity: 0; }
+            75% { opacity: 0;}
+            100% {opacity: 0;}
+        }
+    .fy3{
+        position: absolute;
+        opacity: 0;
+        animation: moun1 linear 5s infinite;
+    }
+        @keyframes moun1{
+            0%{ opacity: 0;}
+            25% {opacity: 0; }
+            50% { opacity: 1; }
+            75% { opacity: 0;}
+            100% {opacity: 0;}
+        }
+    .fy4{
+        position: absolute;
+        opacity: 0;
+        animation: moun2 linear 5s infinite;
+    }
+        @keyframes moun2{
+            0%{ opacity: 0;}
+            25% {opacity: 0; }
+            50% { opacity: 0; }
+            75% { opacity: 1;}
+            100% {opacity: 0;}
+        }
+    .fy5{
+        position: relative;
+        opacity: 0;
+        animation: house linear 5s infinite;
+    }
+        @keyframes house{
+            0%{ opacity: 0;}
+            25% {opacity: 0; }
+            50% { opacity: 0; }
+            75% { opacity: 0;}
+            100% {opacity: 0;}
+        }
+      
+
+        .tur1{
+    animation: su 5s linear infinite;
+     }
+.tur2{
+    animation: su1 5s linear infinite;
+    }
+.tur3{
+    animation: su2 5s linear infinite;
+    position: absolute;
+    }
+.tur4{
+    animation: su3 5s linear infinite;
+    }
+.tur5{
+    animation: su4 5s linear infinite;
+}
+@keyframes su{
+    0%{transform: translate3d(0,0,0);}
+    50%{transform: translate3d(200px,0,0);}
+    100%{transform: translate3d(0,0,0);}
+}
+@keyframes su1{
+    0%{transform: translate3d(0,0,0) skew(0);}
+    50%{transform: translate3d(200px,0,0) skew(20deg);}
+    100%{transform: translate3d(0,0,0) skew(0deg);}
+}
+@keyframes su2{
+        0% { left: 0; }
+        50% { left: 1600px;}
+        100%{left:0;}
+}
+@keyframes su3{
+    0%{transform: translate3d(0,0,0);}
+    50%{transform: translate3d(0,50px,0);}
+    100%{transform: translate3d(0,0,0);}
+}
+@keyframes su4{
+0% {transform: translate3d(80px,0,0);}
+25%{transform: translate3d(80px,80px,0);}
+50%{transform: translate3d(0,80px,0);}
+70%{ transform: translate3d(0,-80px,0);}
+100%{ transform: translate3d(80px,-80px,0);}
+}
+
+.p1{
+        animation: go linear 5s infinite;
+        margin: 20px;
+        padding: 3px;
+        color: #4d0aea;
+        background: #ffffff;
+        border: 5px solid #590083;
+        width: 300px; 
+        height: 300px;
+       }
+        @keyframes go {
+        0% {filter: hue-rotate(0deg);}
+        50%{filter: hue-rotate(200deg);}
+        100%{filter: hue-rotate(400deg);}
+       }
+
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li class="class"><a href="#metka">Задание 1</a></li>
+        <li class="class"><a href="#metka1">Задание 2</a></li>
+        <li class="class"><a href="#metka2">Задание 3</a></li>
+        <li class="class"><a href="#metka3">Задание 4</a></li>
+        <li class="class"><a href="#metka4">Задание 5</a></li>
+        <li class="class"><a href="#metka5">Задание 6</a></li>
+        <li class="class"><a href="#metka6">Задание 7</a></li>
+        <li class="class"><a href="#metka7">Задание 8</a></li>
+        </ul>
+
+        
+            <h1><a name="metka">Задание 1</a></h1>
+            <img src="лес.jpg" class="forest">
+            <img src="фото моря.jpg" class="sea">
+            <img src="горы1.jpg" class="moun1">
+            <img src="горы2.jpg" class="moun2">
+        
+
+    <h1><a name="metka1">Задание 2</a></h1>
+    <img src="лес.jpg" class="f1">
+    <img src="фото моря.jpg" class="f2">
+    <img src="горы1.jpg" class="f3">
+    <img src="горы2.jpg" class="f4">
+
+    <h1><a name="metka2">Задание 3</a></h1>
+    <button type="submit" class="happy">happy</button>
+    <button type="submit" class="angry">angry</button>
+    <button type="submit" class="shy">shy</button>
+    <button type="submit" class="smily">smily</button>
+    <button type="submit" class="gloomy">gloomy</button>
+
+    <h1><a name="metka3">Задание 4</a></h1>
+ <div>
+    <img src="лес.jpg" class="ru1">
+    <img src="фото моря.jpg" class="ru2">
+    <img src="горы1.jpg" class="ru3">
+    <img src="горы2.jpg" class="ru4">
+    </div>
+
+   
+    <h1><a name="metka4">Задание 5</a></h1>
+   <div><img src="лес.jpg" class="fy1" class=one>
+     <img src="фото моря.jpg" class="fy2" class=one>
+     <img src="горы1.jpg" class="fy3" class=one>
+     <img src="горы2.jpg" class="fy4" class=one>
+     <img src="дом.jpg" class="fy5" class=one>
+     </div>
+     
+
+    <h1><a name="metka5">Задание 6</a></h1>
+    
+        <div><img src="лес.jpg" class="tur1">
+        <img src="лес.jpg" class="tur2">
+        <img src="лес.jpg" class="tur3">
+        <img src="лес.jpg" class="tur4">
+        <img src="лес.jpg" class="tur5">
+        </div>
+    
+    
+        <h1><a name="metka6">Задание 7</a></h1>
+    <div>
+    <p class="p1">
+        Для расположения элементов друг над другом можно 
+        использовать для каждого из элементов свойство z-index, значение 
+        которого определяет место расположения элемента.
+        Чтобы задать дополнительную внешнюю границу можно 
+        использовать outline. В отличие от border свойство outline не 
+        участвует в блочной модели CSS и не изменяет размер элемента. 
+        Поэтому его используют, когда хотят добавить рамку без 
+        изменения других CSS-параметров. Свойств outline-top, outline-left 
+        не существует. Все современные браузеры также поддерживают 
+        свойство outline-offset, задающее отступ outline от внешней 
+        границы элемента.
+    </p>
+    </div>
+ 
+</body>
+</html>

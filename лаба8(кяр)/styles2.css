@@ -1,0 +1,29 @@
+.forest{
+    transform: perspective(500px) rotateX(30deg);
+}
+.sea{
+    transform: perspective(500px) rotateY(30deg);
+}
+.moun1{
+    transform: perspective(500px) rotateX(30deg);
+}
+.moun2{
+    transform: perspective(500px) rotateY(320deg);
+}
+img{  
+     display: inline-block;
+      width: 300px;
+      height: 300px;
+      margin: 20px 20px 20px 20px;
+
+   }
+   h1{
+    animation: h1 linear 5s infinite;
+    text-align: center;
+}
+@keyframes h1{
+    0%{opacity: 0;}
+    50%{opacity: 80%;}
+    100%{opacity: 0;}
+    }
+   

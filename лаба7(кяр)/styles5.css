@@ -1,0 +1,76 @@
+
+h1{
+    animation: h1 linear 5s infinite;
+    text-align: center;
+}
+@keyframes h1{
+    0%{opacity: 0;}
+    50%{opacity: 80%;}
+    100%{opacity: 0;}
+    }
+    img{
+        width: 300px;
+        height: 250px;
+        border: blue 5px solid;
+    }
+    .forest{
+        position: absolute;
+        opacity: 0;
+        animation: forest linear 5s infinite;
+    }
+        @keyframes forest{
+            0%{ opacity: 1;}
+            25% {opacity: 0; }
+            50% { opacity: 0; }
+            75% { opacity: 0;}
+            100% {opacity: 0;}
+        }
+    .sea{
+        position: absolute;
+        opacity: 0;
+        animation: sea linear 5s infinite;
+    }
+        @keyframes sea{
+            0%{ opacity: 0;}
+            25% {opacity: 1; }
+            50% { opacity: 0; }
+            75% { opacity: 0;}
+            100% {opacity: 0;}
+        }
+    .moun1{
+        position: absolute;
+        opacity: 0;
+        animation: moun1 linear 5s infinite;
+    }
+        @keyframes moun1{
+            0%{ opacity: 0;}
+            25% {opacity: 0; }
+            50% { opacity: 1; }
+            75% { opacity: 0;}
+            100% {opacity: 0;}
+        }
+    .moun2{
+        position: absolute;
+        opacity: 0;
+        animation: moun2 linear 5s infinite;
+    }
+        @keyframes moun2{
+            0%{ opacity: 0;}
+            25% {opacity: 0; }
+            50% { opacity: 0; }
+            75% { opacity: 1;}
+            100% {opacity: 0;}
+        }
+    .house{
+        position: absolute;
+        opacity: 0;
+        animation: house linear 5s infinite;
+    }
+        @keyframes house{
+            0%{ opacity: 0;}
+            25% {opacity: 0; }
+            50% { opacity: 0; }
+            75% { opacity: 0;}
+            100% {opacity: 1;}
+        }
+      

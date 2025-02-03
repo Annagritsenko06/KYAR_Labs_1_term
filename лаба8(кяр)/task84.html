@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .nav li{
+        float: left;
+        margin: 10px;
+        border: 1px solid black;
+        list-style: none;
+        width: 200px;
+        height: 30px;
+     }
+     
+     a{
+        text-decoration: none;
+
+     }
+     .nav li {background: url(facultet.png) no-repeat 0 0;
+     }
+     .nav li .sun{background: none;}
+     .nav .it:hover {background-position: 0 -30px;}
+     .nav .pim:hover {background-position: 0 -60px;}
+     .nav .xtit:hover {background-position: 0 -90px;}
+.second{
+             position: absolute;
+             display: none;
+            }
+nav li:hover ul
+              {display:block;}
+        .one li{
+           list-style: none; 
+            position: relative;
+            }
+            .second li { margin-top: 12px;
+            margin-left: -41px;
+        margin-bottom: -12px;}
+             .sun li div{
+                text-align: center;
+            }
+            .nav ul li{
+                text-align: center;
+            }
+            
+    </style>
+</head>
+<body>
+    <nav class="nav">
+    <ul>
+        <li ><a href="https://belstu.by/">БГТУ</a></li>
+        <ul class="one"><li class="it"><a>ИТ</a>
+
+            <ul class="second">
+            <li class="sun"><div><a href="https://isit.belstu.by/">Кафедра ИСиТ</a></div></li>
+            <li class="sun"><div><a href="https://belstu.by/fakultety/fit/ivd/">Кафедра ИиВД</a></div></li>
+            <li class="sun"><div><a href="https://belstu.by/fakultety/fit/pi/">Кафедра ПИ</a></div></li>
+            </ul></li>
+            </ul>
+
+        <li class="pim"><a href="https://pim.belstu.by">ПиМ</a></li>
+        <li class="xtit"><a href="https://htit.belstu.by/">ХТиТ</a></li>
+        </ul>
+        </nav>
+</body>
+</html>

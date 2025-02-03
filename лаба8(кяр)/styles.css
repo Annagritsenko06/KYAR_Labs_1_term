@@ -1,0 +1,33 @@
+.forest:hover{
+          transform: scale(0.5);
+          transition: 2s;
+        }
+.sea:hover{
+          transform: rotate(45deg) ;
+          transition: 2s;
+     }
+.moun1:hover{
+         transform: translate(50px,0px);
+         transition: 2s;
+     }
+.moun2:hover{
+         transform: skew(20deg);
+         transition: 2s;
+     }
+img{
+      display: block;
+        width: 70px;
+        height: 70px;
+        margin: 10px 10px 10px 10px;
+
+     }
+     h1{
+          animation: h1 linear 5s infinite;
+          text-align: center;
+     }
+     @keyframes h1{
+          0%{opacity: 0;}
+          50%{opacity: 80%;}
+          100%{opacity: 0;}
+          }
+     
