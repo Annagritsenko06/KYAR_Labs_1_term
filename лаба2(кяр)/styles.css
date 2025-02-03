@@ -1,0 +1,20 @@
+H1, H2, H3 {
+    color:blueviolet;
+    font-family:Monotype Corsiva;
+}
+.help { 
+    color:red;
+font-family: Times New Roman;
+font-size: 18px;
+}
+.copyr {
+    color:yellow;
+    font-family: Times New Roman;
+    font-size: 20px;    
+
+}
+.imp {
+    color:green;
+font-family: Times New Roman;
+font-size: 22px;
+}
