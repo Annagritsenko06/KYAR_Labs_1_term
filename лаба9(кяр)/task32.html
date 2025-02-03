@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .grid {
+ display:grid;
+ grid-template-areas: 
+ 'h h h h h'
+ 'n a a a as'
+ 'n a a a as'
+ 'n a a a as'
+ 'n a a a as'
+ 'f f f f f';
+height: 750px;
+ grid-gap: 5px;
+ }
+       .grid > div{
+            text-align: center;
+            background-color: gray;}
+        a{
+            font-size:larger ;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div style="grid-area: n">
+        <a href="https://www.tadviser.ru/index.php/%D0%9F%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82:HTML5#:~:text=HTML5%20%2D%20%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BD%D1%8F%D1%8F%20%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B0%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82%D0%B0,%D0%BA%20%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0%D0%BC%20%D1%81%20%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E%20JavaScript.">HTML5</a><br>
+        <a href="https://ru.wikipedia.org/wiki/CSS#:~:text=CSS3%20(%D0%B0%D0%BD%D0%B3%D0%BB.,%D1%80%D0%B5%D0%B0%D0%BB%D0%B8%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%81%20%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B0%20%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%82%D0%BA%D0%B8.">CSS3</a><br>
+        <a href="https://medium.com/@stasonmars/%D0%B2%D0%B5%CC%88%D1%80%D1%81%D1%82%D0%BA%D0%B0-%D0%BD%D0%B0-grid-%D0%B2-css-%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D0%B5-%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE-%D0%B8-%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BE%D1%87%D0%BD%D0%B8%D0%BA-220508316f8b">Grid-верстка</a><br>
+        </div>
+        <div style="grid-area: h"><h2>Основные Grid-свойства</h2></div>
+        <div style="grid-area: a"><h2>Grid-auto-rows / grid-auto-columns</h2>
+            Есть такие понятия как «явный» и «неявный» Grid. «Явный» создаётся при помощи свойств grid-template-columns и grid-template-rows, когда мы явно указываем количество строк и столбцов. Но что если количество элементов больше, чем ячеек в «явном» гриде? В таком случае грид создаст «неявный» грид. Размеры колонок и строк будут рассчитаны автоматически, в зависимости от контента внутри них. Чтоб контролировать размеры строк и столбцов, в «неявном» гриде есть свойства grid-auto-rows / grid-auto-columns.
+            <h2>repeat() - auto-fill / auto-fit</h2>
+            Создание адаптивной сетки — неотъемлемая часть вёрстки. Grid предоставляет нам возможности создавать простые адаптивные раскладки без применения медиа выражений. Функция repeat() первым аргументом может принимать не только количество, но и ключевые слова — auto-fill / auto-fit.
+            
+            Представим задачу: в ширину экрана нужно вместить максимальное количество карточек, у которых есть минимальный возможный размер. При этом карточки должны растягиваться на всю доступную ширину и выстраиваются по сетке.
+        </div>
+        <div style="grid-area: as">
+            <h2>Grid-auto-rows: minmax();</h2>
+            Иногда нужно задать минимальный размер строке, чтобы при заполнении она растягивалась под контент. С этим легко справляется функция minmax(), которая принимает минимальный и максимальный размер
+            <h2>Grid-column-start, grid-column-end / grid-row-start, grid-row-endgrid-column / grid-row</h2>
+            В последнем примере все элементы расположены в автоматическом порядке, по очереди. Но это легко можно изменить. Переставим последний элемент на место первого. Для этого элементу, который хотим переместить, укажем начальную и конечную линии по вертикали и горизонтали
+        </div>
+        
+            <div style="grid-area: f"><h2>Grid-lines</h2>
+            Неотъемлемой частью спецификации Grid являются grid-lines (линии). Если колонки и строки мы можем создать руками (grid-template-columns / grid-template-rows), то grid-lines всегда создаются автоматически. Мы не можем никак повлиять на их создание, но можем их использовать. Если открыть инспектор гридов в devtools, то видно, что grid создаёт линии и нумерует их.
+            <h2>Grid-area</h2>
+            Используя Grid, можно размещать элементы не только относительно конкретных линий. Также есть возможность создавать области, и размещать элементы внутри конкретной области.
+            
+            Для примера оставим четыре элемента (.el-1 .el-2 .el-3 .el-4), и каждому элементу с помощью grid-area дадим псевдоним, по которому будем к нему обращаться, выстраивая сетку в свойстве grid-template у родителя.</div>
+    </div>
+</body>
+</html>
