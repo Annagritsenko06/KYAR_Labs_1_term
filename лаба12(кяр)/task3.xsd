@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs ="http://www.w3.org/2001/XMLSchema">
+<xs:element name="main">
+<xs:complexType>
+<xs:sequence>
+    <xs:element name="title1" type="xs:string"/>
+    <xs:element name="div1" type="xs:string"/>
+    <xs:element name="title2" type="xs:string"/>
+    <xs:element name="div2" type="xs:string"/>
+    <xs:element name="title3" type="xs:string"/>
+    <xs:element name="div3" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>

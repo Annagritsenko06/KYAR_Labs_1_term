@@ -1,0 +1,142 @@
+$lightred: rosybrown;
+body{
+    background-color: $lightred;
+}
+%logotip{
+    background-image: url(logotip.png);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 200px;
+}
+body{
+    @extend %logotip;
+}
+%li{
+    display: inline-block;
+    text-decoration: none;
+    background-color: bisque;
+    padding: 5px 20px 5px 20px;
+    margin: 30px;
+}
+.li{
+    @extend %li;
+}
+%nav{padding-left: 300px;}
+nav{ @extend %nav;}
+a{
+    @extend %li;
+}
+@mixin div1{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    flex: 3 1 700px;
+}
+.div1{
+    @include div1;
+}
+@mixin div2{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    flex: 2 1 500px;
+}
+.div2{
+    @include div2;
+}
+@mixin word{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    align-items: flex-start;
+    justify-content: center;
+}
+.word{ @include word;}
+%err{ 
+      flex:4 1 100px;
+}
+.err{ @extend %err;}
+@mixin header{
+    display: flex;
+    flex-flow: row wrap;
+    flex: 4 1 100px;
+}
+%h1{ flex: 4 1 800px;}
+h1{ @extend %h1;}
+
+
+
+
+%img2{ display: flex;
+    flex: 4 1 100px;}
+    .sec{@extend %img2;} 
+   
+@mixin flex{
+       display: flex;
+        flex-flow: row wrap;
+       justify-content: space-around;
+       flex: 3 1 700px;
+    
+}
+.flex{ @include flex;}
+@mixin flex2{
+    display: flex;
+     flex-flow: row wrap;
+    justify-content: space-around;
+    flex: 2 1 500px;
+}
+.flex2{ @include flex2;}
+header{
+    @include header;
+}
+%main{
+    display: flex;
+}
+div{
+    @extend %main;
+}
+
+%form{ 
+    display:inline-block;
+}
+form{@extend %form;}
+%p{  display: inline-block;
+    text-align:left;
+    line-height:15px;
+    color:gainsboro;
+    font-size: 1.2em;
+    margin-right: 0px;
+    padding: 1px;
+    width: 20em;
+}
+p{ @extend %p;}
+
+@mixin text{
+    border-radius: 10px 10px 10px 10px ;
+    background-color:lightpink;
+    color:lightslategrey;}
+    .text{@include text;}
+
+@for $i from 1 through 2{
+    .lab#{$i}{
+        font-size: 20px*$i;
+    }
+}
+@mixin input-color ($height, $width){
+    @if (($height < $width) and ($width >= 15px)) {
+      background-color:aliceblue;
+  } @else {
+      background-color: plum;
+  }}
+
+  .bone{
+    @include input-color(20px, 15px);
+  }
+  .div9{
+    color:thistle;
+    padding-bottom: 20px;
+    font-size: 15px; }
+    h3{
+        font-size: 30px;
+    }

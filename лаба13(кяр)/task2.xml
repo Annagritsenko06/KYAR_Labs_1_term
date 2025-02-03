@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="task2.xsl"?>
+<root>
+    <student>
+        <firstname>Мария</firstname>
+        <lastname>Петрова</lastname>
+        <mark>3</mark>
+    </student>
+    <student>
+        <firstname>Иван</firstname>
+        <lastname>Климов</lastname>
+        <mark>4</mark>
+    </student>
+    <student>
+        <firstname>Алексей</firstname>
+        <lastname>Заливайкин</lastname>
+        <mark>8</mark>
+    </student>
+    <student>
+        <firstname>Андрей</firstname>
+        <lastname>Смирнов</lastname>
+        <mark>9</mark>
+    </student>
+    <student>
+        <firstname>Ирина</firstname>
+        <lastname>Копка</lastname>
+        <mark>10</mark>
+    </student>
+
+</root>

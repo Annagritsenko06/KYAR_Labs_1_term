@@ -1,0 +1,36 @@
+$font-family: "Monotype Corsiva";
+$color: #800080;
+
+%laba{
+    font-family: "Times New Roman";
+}
+
+h1, h2, h3{
+    font-family: $font-family;
+    color: $color;
+    text-align: center;
+}
+.help{
+    @extend %laba;
+    color: red;
+    font-size: 18pt;
+}
+.copyr{
+    @extend %laba;
+    color: greenyellow;
+    font-size: 20pt;
+    
+}
+.imp{
+    @extend %laba;
+    color: pink;
+    font-size: 22pt;
+}
+table td{
+    color: violet;
+}
+p{
+    font-size: 16pt;
+    color: blue;
+    font-family: Arial;
+}

@@ -1,0 +1,125 @@
+body {
+  background-color: rosybrown;
+}
+
+body {
+  background-image: url(logotip.png);
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 200px;
+}
+
+a, .li {
+  display: inline-block;
+  text-decoration: none;
+  background-color: bisque;
+  padding: 5px 20px 5px 20px;
+  margin: 30px;
+}
+
+nav {
+  padding-left: 300px;
+}
+
+.div1 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  flex: 3 1 700px;
+}
+
+.div2 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  flex: 2 1 500px;
+}
+
+.word {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.err {
+  flex: 4 1 100px;
+}
+
+h1 {
+  flex: 4 1 800px;
+}
+
+.sec {
+  display: flex;
+  flex: 4 1 100px;
+}
+
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  flex: 3 1 700px;
+}
+
+.flex2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  flex: 2 1 500px;
+}
+
+header {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 4 1 100px;
+}
+
+div {
+  display: flex;
+}
+
+form {
+  display: inline-block;
+}
+
+p {
+  display: inline-block;
+  text-align: left;
+  line-height: 15px;
+  color: gainsboro;
+  font-size: 1.2em;
+  margin-right: 0px;
+  padding: 1px;
+  width: 20em;
+}
+
+.text {
+  border-radius: 10px 10px 10px 10px;
+  background-color: lightpink;
+  color: lightslategrey;
+}
+
+.lab1 {
+  font-size: 20px;
+}
+
+.lab2 {
+  font-size: 40px;
+}
+
+.bone {
+  background-color: plum;
+}
+
+.div9 {
+  color: thistle;
+  padding-bottom: 20px;
+  font-size: 15px;
+}
+
+h3 {
+  font-size: 30px;
+}/*# sourceMappingURL=lab11.css.map */

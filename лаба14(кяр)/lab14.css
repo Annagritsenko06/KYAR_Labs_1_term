@@ -1,0 +1,34 @@
+.imp, .copyr, .help {
+  font-family: "Times New Roman";
+}
+
+h1, h2, h3 {
+  font-family: "Monotype Corsiva";
+  color: #800080;
+  text-align: center;
+}
+
+.help {
+  color: red;
+  font-size: 18pt;
+}
+
+.copyr {
+  color: greenyellow;
+  font-size: 20pt;
+}
+
+.imp {
+  color: pink;
+  font-size: 22pt;
+}
+
+table td {
+  color: violet;
+}
+
+p {
+  font-size: 16pt;
+  color: blue;
+  font-family: Arial;
+}/*# sourceMappingURL=lab14.css.map */

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 1</title>
+    <link rel="stylesheet" href="task.css">
+    <style>
+        @import "small.css" (min-width:600px) and (max-width:1000px);
+        .container{
+            display:flex;
+            justify-content: center;
+            flex-flow: row wrap;
+            align-content: space-between;
+        }
+        .div1{
+    flex:4 1 1000px;
+    background-color:blanchedalmond;
+   flex-flow: row wrap;
+   border: 1px solid black;
+   text-align: center;
+        }
+    .div2{
+    
+    flex: 2 1 30px;
+    background-color:darksalmon;
+    border: 1px solid black;
+   margin: 0 5px;
+    
+    }
+    .div3{
+        flex: 3 1 90px;
+        background-color:darksalmon;
+        border: 1px solid black;
+        margin: 0 5px;
+    }
+    .div4{
+        flex: 1 1 150px;
+        background-color:darksalmon;
+        border: 1px solid black;
+        margin: 0 5px;
+        
+    }
+    video{
+        width: 300px;
+        height: 300px;
+    }
+    .flex{
+        display: flex;
+        flex-flow: row wrap;
+        flex: 4 1 400px;
+        
+    }
+    @media(max-width:500px){
+        figcaption{
+            color:red;}
+    }
+    img{
+        width: 250px;
+        height: 250px;
+    }
+div > img{
+    margin: 0 50px;
+}
+figcaption{
+    text-align: center;
+}
+
+@media(min-width: 1280px){
+            .div5{
+                flex: 1 1 150px;
+                border: 2px solid black;
+                margin: 0 5px;
+            }
+            .one li{
+                list-style: none;
+            }
+            .second li{
+                list-style: none;
+                display: inline;
+                padding: 10px 150px 10px 150px;
+            }
+            .menu{
+                width: 1000px;
+                padding: 10px 50px 10px 69px;
+                border: 2px solid black;
+                margin-left: 45px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+        }
+        @media(max-width: 1279px){
+            .second li{
+            list-style: none;
+            padding: 10px 20px 10px 2px;
+            width: 100px;
+            border: 2px solid black;
+            margin-top: 10px;
+        }
+        .second{
+             position: absolute;
+             display: none;
+            }
+        nav li:hover ul
+              {display:block;}
+        .one li{
+           list-style: none; 
+            position: relative;
+            text-align: center;
+            width: 218px;
+            margin-left: -40px; }
+        .menu{
+            width: 140px;
+            padding: 10px 50px 10px 50px;
+            border: 2px solid black;
+        }
+        .hamburger{
+            margin-bottom: 170px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <h1 class="div1">Flexbox-верстка</h1>
+    <div class="container">
+        <div class="div2">
+            <video controls>
+                <source src="C:\Users\admin\Documents\уник\лабы по кяр\лаба10(кяр)\видео тикток.MOV">
+            </video>
+            <video controls>
+                <source src="C:\Users\admin\Documents\уник\лабы по кяр\лаба10(кяр)\видео 2 алинажестко кайфует.mp4">
+            </video>
+            <video controls>
+                <source src="C:\Users\admin\Documents\уник\лабы по кяр\лаба10(кяр)\video.mp4">
+            </video>
+        </div>
+        <div class="div3">Flexbox-верстка — разметка макетов веб-страниц, которая 
+            позволяет автоматически настраивать ширину элементов, 
+            находящихся внутри flex-контейнера. Для применения данного 
+            способа разметки следует учитывать разделение применяемых 
+            свойств на свойства flex-контейнера и свойства flex-элемента.
+            С помощью display: flex; осуществляется преобразование 
+            HTML-элемента в flex-контейнер, а элементы находящийся внутри 
+            него в flex-элементы. По умолчанию flex-элементы помещаются 
+            друг за другом в одной строке. Свойство flex-flow позволяет 
+            выбрать направление отображения элементов в контейнере, а 
+            также указать их перенос на следующую строку. Первое значение 
+            определяет направление, а второе перенос на следующую строку.
+            Свойство flex-flow является сокращенной записью и содержит 
+            значения свойств flex-direction и flex-wrap. Flex-элементы могут 
+            размещаться в строке (значение row) или в колонке (значение column). 
+            Перенос элементов осуществляется с помощью значения wrap.
+            Свойство justify-content определяет способ выключки flex-элементов в строке. Для выравнивания левому краю используется 
+            значения flex-start, а по правому краю — flex-end. Для 
+            равномерного распределения элементов создавая пространство 
+            между ними необходимо значение space-between, а space-around
+            добавляет поля по левому и правому краям крайних элементов.
+            Свойство align-items определяет, как flex-элементы различной 
+            высоты будут выровнены по высоте строки в flex-контейнере. Для 
+            выравнивания верхнему краю используется значения flex-start, а 
+            по нижнему краю — flex-end. Значение stretch позволяет 
+            растянуть каждый элемент по высоте контейнера, делая их высоты 
+            одинаковыми. Свойство align-content определяет как будут 
+            размещены flex-элементы, занимающие несколько строк.</div>
+        <div class="div4">
+            <audio controls> <source src="C:\Users\admin\Documents\уник\лабы по кяр\лаба10(кяр)\Где Фантом - Я Тебя Люблю.mp3"></audio>
+      <audio controls> <source src="C:\Users\admin\Documents\уник\лабы по кяр\лаба10(кяр)\Scally Milano, Uglystephan - Вампир.mp3"></audio>
+      <audio controls> <source src="C:\Users\admin\Documents\уник\лабы по кяр\лаба10(кяр)\heronwater-lyubit-budu-mp3.mp3"></audio>
+        </div>
+        </div>
+
+        <div class="hamburger">
+            <nav class="nav">
+                <ul class="one"><li><div class="menu">Заголовок</div>
+                    <ul class="second">
+                        <li class="div5">Ячейка 1</li>
+                        <li class="div5">Ячейка 2</li>
+                        <li class="div5">Ячейка 3</li>
+                    </ul></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class=flex>
+        <div><img src="Деррик.jpg">
+            <figcaption>Деррик Роуз Тимбервулвз</figcaption></div>
+        <div><img src="данки.jpg">
+            <figcaption>Деррик Роуз данки</figcaption></div>
+        <div><img src="кавай.jpg">
+            <figcaption>Кавай Леонард</figcaption></div>
+        <div><img src="Антония.jpg">
+            <figcaption>Антония Сандрич</figcaption></div>
+        <div><img src="джордан.jpg">
+            <figcaption>Майкл Джордан</figcaption></div>
+        <div><img src="венас.jpg">
+            <figcaption>Даниель Венас</figcaption></div>
+        <div><img src="саврасов.jpg">
+            <figcaption>Саврасов Андрей</figcaption></div>
+        <div><img src="дуэйн.jpg">
+            <figcaption>Дуэйн Уэйд</figcaption></div>
+            </div>
+</body>
+</html>
