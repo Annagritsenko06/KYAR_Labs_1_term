@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <style>
+      .element1 {
+        position: relative;
+        height: 150px;
+        width: 150px;
+        margin-left: 60px;
+        border: 1px solid #666;
+        -webkit-perspective: 130px;/* Safari 4-8  */
+        -webkit-perspective-origin: 50% 50%;/* Safari 4-8  */
+        perspective: 130px;
+        perspective-origin: 50% 50%;
+      }
+      .element2 {
+        padding: 50px;
+        position: absolute;
+        border: 1px solid #000;
+        background-color: #1c87c9;
+        background: #8ebf42;
+        -webkit-transform-style: preserve-3d;/* Safari 3-8  */
+        -webkit-transform: rotateX(45deg);/* Safari 3-8  */
+        transform-style: preserve-3d;
+        transform: rotateX(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Perspective-origin property example</h2>
+    <h3>Perspective-origin: 50% 50%:</h3>
+    <div class="element1">
+      Box1
+      <div class="element2">Box2</div>
+    </div>
+  </body>
+</html>
